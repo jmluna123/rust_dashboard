@@ -1,0 +1,18 @@
+[package]
+name = "rust-dashboard"
+version = "0.1.0"
+edition = "2021"
+authors = ["Jocellyn Luna"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = "0.4.10"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+
+[dependencies.rocket_contrib]
+version = "0.4.10"
+default-features = false
+features = ["handlebars_templates", "tera_templates", "serve"]
