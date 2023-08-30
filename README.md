@@ -21,6 +21,8 @@ Este proyecto emplea como base La plantilla de Bootstrap gratuita [Nice Admin](h
 - Rust [instalar](https://www.rust-lang.org/)
 - Cargo 1.73.0-nightly [instalar](https://doc.rust-lang.org/cargo/)
 
+Adicional, el sistema hace uso de un API para conectarse a la base de datos y obtener las predicciones de los modelos. El API puede encontrarse en [API ML](https://github.com/jmluna123/API_ML).
+
 ## 📌 Instalación
 
 ```
