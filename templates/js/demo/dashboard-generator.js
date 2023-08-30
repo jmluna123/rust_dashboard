@@ -81,7 +81,7 @@ updateChart().then((data) => {
 		"17:00",
 	];
 	var values_bar = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-
+	console.log(data);
 	for (point of data) {
 		let value = parseFloat(point.value);
 		colors_area.push(point.color);
@@ -89,7 +89,7 @@ updateChart().then((data) => {
 		values_area.push(value.toFixed(2));
 
 		let i = parseInt(point.hour.slice(0, 2)) - 6;
-
+		console.log(i);
 		if ((i >= 0) & (i < 12)) {
 			values_bar[i] = values_bar[i] + value;
 		}
@@ -229,7 +229,7 @@ updateChart().then((data) => {
 							drawBorder: false,
 						},
 						ticks: {
-							maxTicksLimit: 6,
+							maxTicksLimit: 7,
 						},
 						maxBarThickness: 25,
 					},
@@ -238,7 +238,7 @@ updateChart().then((data) => {
 					{
 						ticks: {
 							min: 0,
-							max: 60,
+							max: 120,
 							maxTicksLimit: 5,
 							padding: 10,
 							callback: function (value, index, values) {
